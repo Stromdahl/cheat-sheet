@@ -1,17 +1,23 @@
-## Linux 
+# Linux 
 
-### Commands
-#### General
-Get the number of installed packeges on the system
-` dpkg-query -W | wc -l ` Debian based system
-` yum list installed | wc -l ` RPM-Based System (not tested)
+## Commands
+**Get the number of installed packeges on the system**
+
+Debian based system
+```
+dpkg-query -W | wc -l # Debian based Systems
+yum list installed | wc -l RPM-Based Systems (not verified to work)
+``` 
 
 list running services on Systemd
-` systemctl list-units --type=service --state=running `
+```
+systemctl list-units --type=service --state=running 
+```
 
 #### dd
+```
 dd if=debian-11.6.0-amd64-netinst.iso of=/dev/sdb bs=4M
-
+```
 ## Markdown
 [Cheet Sheet](https://www.markdownguide.org/cheat-sheet/)
 Link
